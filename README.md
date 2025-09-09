@@ -1,6 +1,6 @@
 ### CGM SF
 
-student fellowship
+STUDENT FELLOWSHIP
 
 ### Installation
 

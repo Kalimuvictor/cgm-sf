@@ -1,7 +1,7 @@
 app_name = "cgm_sf"
 app_title = "CGM SF"
-app_publisher = "cgm"
-app_description = "student fellowship"
+app_publisher = "CGM SF"
+app_description = "STUDENT FELLOWSHIP"
 app_email = "kalimvictor44@gmail.com"
 app_license = "mit"
 
