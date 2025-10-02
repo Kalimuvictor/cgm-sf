@@ -1,0 +1,61 @@
+
+
+
+
+{% include "cgm_sf/templates/includes/style.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maktaba ya Vitabu</title>
+  
+</head>
+<body>
+
+  <h2>Bofya Kitabu Ili Kukisoma Hapa Hapa</h2>
+
+  <div class="book-grid">
+    <!-- Kitabu 1 -->
+    <img src="https://books.google.com/books/content?id=3cYdEQAAQBAJ&printsec=frontcover&img=1&zoom=1" 
+         alt="Kitabu 1" class="book-cover"
+         onclick="openBook('https://books.google.co.tz/books?id=3cYdEQAAQBAJ&newbks=0&lpg=PA1&pg=PA1&output=embed')">
+
+    <!-- Kitabu 2 -->
+    <img src="https://books.google.com/books/content?id=CH5qDwAAQBAJ&printsec=frontcover&img=1&zoom=1" 
+         alt="Kitabu 2" class="book-cover"
+         onclick="openBook('https://books.google.co.tz/books?id=CH5qDwAAQBAJ&newbks=0&lpg=PP1&pg=PP1&output=embed')">
+
+    <!-- Kitabu 3 -->
+    <img src="https://books.google.com/books/content?id=MVRQEQAAQBAJ&printsec=frontcover&img=1&zoom=1" 
+         alt="Kitabu 3" class="book-cover"
+         onclick="openBook('https://books.google.co.tz/books?id=MVRQEQAAQBAJ&newbks=0&lpg=PP1&dq=injili&pg=PP1&output=embed')">
+
+    <!-- Kitabu 4 -->
+    <img src="https://books.google.com/books/content?id=5IpqDwAAQBAJ&printsec=frontcover&img=1&zoom=1" 
+         alt="Kitabu 4" class="book-cover"
+         onclick="openBook('https://books.google.co.tz/books?id=5IpqDwAAQBAJ&newbks=0&lpg=PT100&dq=zaka%20na%20sadaka&pg=PT108&output=embed')">
+         
+  
+        <!--kitabu 5-->
+        <img src="https://books.google.com/books/content?id=CotSEAAAQBAJ&printsec=frontcover&img=1&zoom=1"
+        alt="kitabu 5" class="book-cover"
+        onclick="openBook('https://books.google.co.tz/books?id=CotSEAAAQBAJ&newbks=0&lpg=PT40&dq=nyaraka%20za%20paulo&pg=PA1&output=embed')">
+    </div>
+
+
+
+  <!-- Sehemu ya iframe kusomea -->
+  <div id="reader">
+    <iframe id="bookFrame" src="" allowfullscreen></iframe>
+  </div>
+
+  <script>
+    function openBook(url) {
+      document.getElementById("bookFrame").src = url;
+      window.scrollTo({ top: document.getElementById("reader").offsetTop - 20, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

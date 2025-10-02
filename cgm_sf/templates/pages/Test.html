@@ -1,0 +1,28 @@
+
+
+
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <title>Usajili QR Test</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</head>
+<body style="font-family: Arial, sans-serif; text-align: center; padding: 40px;">
+
+  <h2>Scan QR Code Ili Kujaza Form</h2>
+
+  <!-- Canvas ya QR -->
+  <canvas id="qr-code"></canvas>
+
+  <script>
+    // Tengeneza QR code ya link yako
+    var qr = new QRious({
+      element: document.getElementById('qr-code'),
+      value: 'http://192.168.0.91:8000/usajili/new', // link yako ya Frappe Web Form
+      size: 200
+    });
+  </script>
+
+</body>
+</html>
